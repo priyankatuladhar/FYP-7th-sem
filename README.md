@@ -10,6 +10,6 @@
   <li>Square</li>
   <li>Round</li>
 </ol>
-<a href="https://www.kaggle.com/datasets/niten19/face-shape-dataset/code" target="_blank">View on Kaggle</a>
+
 
 
