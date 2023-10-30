@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <style>
+        column-1 {
+          background-color: #fff;
+          align-items: center;
+          font-family: 'Poppins', sans-serif;
+          font-size: 1.5 rem;
+          padding: 5rem;
+          
+        }
+        
+        .column-2 {
+          background-color: #fff;
+          font-family: 'Poppins', sans-serif;
+          font-size: 1.5rem;
+          padding: 5rem;
+        }
+        .price{
+        display:flex;
+        }
+        .button{
+        width: 100%;
+        display: block;
+        align-self: center;
+        padding: 1rem;
+        border: 0.15rem #711304 solid;
+        cursor: pointer;
+        border-radius: 1rem;
+        background-color: #ce3923;
+        font: 1.8rem Helvetica;
+        }
+        .pr{
+          display:flex;
+          color:#ce3923;
+        }
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 20px;
+        }</style>
+    <link rel='stylesheet' href='./static/css/style.css' />
+
+</head>
+<body>
+    <header class="header">
+
+        <a href="/home" class="logo"> LOGO </a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="/home">home</a></li>
+                <li><a href="/products">products</a></li>
+                <li><a href="#">pages +</a>
+                    <ul>
+                        <li><a href="/aboutus">about</a></li>
+                        <li><a href="/blog">blogs</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://127.0.0.1:3000/">Recommendation System</a></li>
+                <li><a href="/example">Search</a></li>
+                <li><a href="/contact">contact</a></li>
+                <li><a href="#">account +</a>
+                    <ul>
+                        <li><a href="/log">login</a></li>
+                        <li><a href="/register">register</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://kkx9z.zappar.io/5263444510522000220/"> AR TRY ON</a>
+            </ul>
+        </nav>
+</header>
+<div class="container">
+    <img src="{{url_for('static', filename='images/product-1.jpg')}}" alt="">
+    <div class="column-1"><H2><b>PREMIUM GLASSES</b></H2><br>
+        <li>Unisex Frames that look good in all ages</li></n>
+        <li>Matte Finish Frame</li></n>
+        <li>Blu-ray cut glasses </li></n>
+        <li>type and scrambled it to make a type specimen book. It has survived </li></n>
+         </div>
+    <div class="column-2">
+        
+        <div class="price"><b>Price: <div class="pr" >$20</div></b></div></br>
+        <div class="status"><b>Status: </b>Available</div></br>
+        <div class="color"></div> <b> Colors:<select>
+            <option>Black</option>
+            <option>Blue</option>
+            <option>Clear</option>
+            <option>Brown</option>
+          </select></b>
+        </br><br>
+       
+        <div class="quantity"><b>
+            Quantity:</b> <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+        </div><br>
+        <a href="https://kkx9z.zappar.io/5263444510522000220/"><button class="button">Try in AR</button></a>
+    </div>
+    </div>
+  </div>
+</body>
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="./home.html"> <i class="fas fa-angle-right"></i> Home</a>
+                <a href="./products.html"> <i class="fas fa-angle-right"></i> Products</a>
+                <a href="./about.html">   <i class="fas fa-angle-right"></i> About Us</a>        
+                <a href="./blogs.html"> <i class="fas fa-angle-right"></i> Blogs</a>
+                <a href="./contact.html"> <i class="fas fa-angle-right"></i> Contact Us</a>
+          </div>
+    
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="#"> <i class="fab fa-github"></i> github </a>
+            </div>
+    
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <form action="">
+                    <input type="email" placeholder="enter your email">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
+    
+        </div>
+    
+        <div class="credit"> created by <span>SPYS Ltd.</span> | all rights reserved </div>
+    
+    </section>
+  
+      <!-- footer section ends -->
+</html>
